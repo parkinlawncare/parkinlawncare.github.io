@@ -1,0 +1,128 @@
+---
+layout: page
+title: Final Designs and Branding
+permalink: /
+---
+
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md col-md-offset">
+        <div class="block">
+            <img class=center src="img/123.png" alt="Img" class="center"
+                    />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>Parkin Lawn Care has been servicing Peterborough, Millbrook, Clarington and surrounding areas since 2021.</p>
+          </div>
+          <p>We offer a weekly lawn cutting service and, once you sign up we will set a day for service and you can expect us the same day each week.
+Our staff are friendly, reputable, compassionate, and eager entrepreneurs. We take the time to get to know you, and respond to requests in the easiest and most efficient way possible. Our business is built on trust with our customers. If we don't build and maintain trust with our customers than we believe it wouldn't be fair to our customers. We look forward to hearing from you soon. </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="img/wrapper-img.png" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>Meet Our Team</h2>
+      <p>Quick Personal BIO</p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>HIGHLIGHT OF SERVICES/DEALS</p>
+        <p>Contact us now at ###-###-#### for a free estimate</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-2 col-md-6">
+        <div class="service-item">
+          <i class="icon ion-coffee"></i>
+          <h4> Residential Lawn Cutting</h4>
+          <p>We offer weekly/Seasonal packages</p>
+        </div>
+      </div>
+      <div class="col-sm-2 col-md-6">
+        <div class="service-item">
+          <i class="ion-compass"></i>
+          <h4>Commercial lawn cutting</h4>
+          <p> Commercial lawn cutting needs </p>
+        </div>
+      </div>
+
+        </div>
+  </div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>See the Parkin Lawn Care Difference</h2>
+          <p>Judge for yourself The work and results we’ve achieved for other clients</p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/work" >Photo Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content Start -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Customer Testomonials</h2>
+        <p> ??? paragraph </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
